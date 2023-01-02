@@ -9,13 +9,13 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   try {
     res.json({
-      "users": [
+        users: [
         {
-          "id": 1,
-          "first_name": "Chelo",
-          "last_name": "Redux",
-          "email": "chelor@chelo.com",
-          "password": "uno"
+          id: 1,
+          first_name: "Chelo",
+          last_name: "Redux",
+          email: "chelor@chelo.com",
+          password: "uno"
         },
         {
           "id": 2,

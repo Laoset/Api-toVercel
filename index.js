@@ -140,10 +140,10 @@ app.get('/api/productos/:id', (req, res)=>{
 app.post('/api/usuarios', (req, res)=>{
     const info = req.body
 
-    const ids = data.map(dato => dato.id)
-    const maxId = Math.max(...ids)
+    // const ids = data.map(dato => dato.id)
+    // const maxId = Math.max(...ids)
     const newUsuario = {
-        id: maxId + 1,
+        // id: maxId + 1,
         first_name: info.first_name,
         last: info.last_name,
         email: info.email,

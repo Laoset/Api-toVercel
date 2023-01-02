@@ -123,7 +123,7 @@ app.get('/api/usuarios', (req, res)=>{
     res.send(data.users)
 })
 app.get('/api/productos', (req, res)=>{
-    res.send(data.users)
+    res.send(data.products)
 })
 
 app.get('/api/usuarios/:id', (req, res)=>{

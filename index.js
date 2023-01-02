@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const db = require('./api/db')
+const db = require('./api/db.json')
+// const fs = require('fs')
 
-app.use(express.json({ extended: false}));
+// app.use(express.json({ extended: false}));
 
 app.use("/api/db", db)
 

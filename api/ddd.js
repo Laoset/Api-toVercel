@@ -6,8 +6,8 @@ const router = express.Router();
  *
  * @return product list | empty.
  */
-router.get("/", async (req, res) => {
-  try {
+router.get("/", (req, res) => {
+  
     res.json({
         users: [
         {
@@ -117,11 +117,7 @@ router.get("/", async (req, res) => {
           "category": "Hogar"
         }
       ]
-    });
-  } catch (error) {
-    console.error(error);
-    return res.status(500).send("Server error");
-  }
+    }); 
 });
 
 module.exports = router;

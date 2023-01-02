@@ -117,7 +117,10 @@ let data = {
 // app.use(express.json({ extended: false}));
 
 app.get('/api/usuarios', (req, res)=>{
-    res.send(data)
+    res.send(data.users)
+})
+app.get('/api/productos', (req, res)=>{
+    res.send(data.users)
 })
 
 app.get('/api/usuarios/:id', (req, res)=>{

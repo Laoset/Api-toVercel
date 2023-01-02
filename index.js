@@ -129,7 +129,12 @@ app.get('/api/productos', (req, res)=>{
 app.get('/api/usuarios/:id', (req, res)=>{
     const id = Number(req.params.id)
     const usuarios = data.users.find(usuario => usuario.id === id)
-    res.json(usuarios)
+    if(usuarios){
+        res.json(usuarios)
+    }
+    else{
+        res.status(404).end()
+    }
 })
 app.get('/api/productos/:id', (req, res)=>{
     const idProduct = Number(req.params.id)

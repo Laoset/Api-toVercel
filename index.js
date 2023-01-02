@@ -9,17 +9,10 @@ let data = {
     "users": [
     {
       "id": 1,
-      "first_name": "Chelo",
-      "last_name": "Redux",
-      "email": "chelor@chelo.com",
-      "password": "uno"
-    },
-    {
-      "id": 2,
-      "first_name": "Laila",
-      "last_name": "React",
-      "email": "lailar@chela.com",
-      "password": "dos"
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "admin@admin.com",
+      "password": "admin"
     }
   ],
   "products": [

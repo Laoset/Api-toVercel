@@ -115,7 +115,7 @@ let data = {
 // app.use(express.json({ extended: false}));
 
 app.get('/api/usuarios', (req, res)=>{
-    res.send(data.users)
+    res.send(data)
 })
 app.get('/api/productos', (req, res)=>{
     res.send(data.products)
@@ -140,17 +140,17 @@ app.get('/api/productos/:id', (req, res)=>{
 app.post('/api/usuarios', (req, res)=>{
     const info = req.body
 
-    // const ids = data.map(dato => dato.id)
-    // const maxId = Math.max(...ids)
+    const ids = data.users.map(dato => dato.id)
+    const maxId = Math.max(...ids)
     const newUsuario = {
-        // id: maxId + 1,
+        id: maxId + 1,
         first_name: info.first_name,
         last: info.last_name,
         email: info.email,
         password: info.password
     }
-    data  = [...data, newUsuario]
-
+    data.users = [...data.users, newUsuario] 
+    console.log(data)
     res.json(newUsuario)
 })
 

@@ -135,8 +135,8 @@ app.get('/api/productos/:id', (req, res)=>{
     const idProduct = Number(req.params.id)
     const productos = data.products.find(producto => producto.id === idProduct)
     res.json(productos)
-})
-
+});
+//POST DE USUARIOS
 app.post('/api/usuarios', (req, res)=>{
     const info = req.body
 
@@ -152,7 +152,24 @@ app.post('/api/usuarios', (req, res)=>{
     data.users = [...data.users, newUsuario] 
     console.log(data)
     res.json(newUsuario)
-})
+});
+//POST DE PRODUCTOS
+app.post('/api/productos', (req, res)=>{
+  const info = req.body
+
+  const ids = data.products.map(dato => dato.id)
+  const maxId = Math.max(...ids)
+  const newProduct = {
+    id: maxId + 1,
+    name: info.name,
+    price: info.price,
+    category: info.category
+  };
+  data.products = [...data.users, newProduct] 
+  console.log(data)
+  res.json(newProduct)
+});
+
 
 const PORT = 8080;
 app.listen(PORT, ()=> console.log (`Servidor en funcionamiento en el puerto ${PORT}`))

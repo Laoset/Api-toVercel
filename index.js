@@ -27,7 +27,7 @@ let data = {
     {
       "id": 3,
       "name": "Mouse",
-      "price": 300,
+      "price": 350,
       "category": "Electronicos"
     },
     {
@@ -154,21 +154,21 @@ app.post('/api/usuarios', (req, res)=>{
     res.json(newUsuario)
 });
 //POST DE PRODUCTOS
-app.post('/api/productos', (req, res)=>{
-  const info = req.body
+// app.post('/api/productos', (req, res)=>{
+//   const info = req.body
 
-  const ids = data.products.map(dato => dato.id)
-  const maxId = Math.max(...ids)
-  const newProduct = {
-    id: maxId + 1,
-    name: info.name,
-    price: info.price,
-    category: info.category
-  };
-  data.products = [...data.products, newProduct] 
-  console.log(data)
-  res.json(newProduct)
-});
+//   const ids = data.products.map(dato => dato.id)
+//   const maxId = Math.max(...ids)
+//   const newProduct = {
+//     id: maxId + 1,
+//     name: info.name,
+//     price: info.price,
+//     category: info.category
+//   };
+//   data.products = [...data.products, newProduct] 
+//   console.log(data)
+//   res.json(newProduct)
+// });
 
 
 const PORT = 8080;

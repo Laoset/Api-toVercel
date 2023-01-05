@@ -2,8 +2,7 @@ POST http://localhost:8080/api/usuarios
 Content-Type: application/json
 
 {
-      "first_name": "CCC",
-      "last_name": "beili2",
-      "email": "beili@jaime.com",
-      "password": "beili"
+    "name": 'JARRA,
+    "price": 10,
+    "category": Hogar
 }

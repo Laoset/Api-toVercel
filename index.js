@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 var cors = require('cors')
-app.use(cors()) // Use this after the variable declaration
+app.use(cors()) 
 //depedencia para post
 app.use(express.json())
 
-// const db = require('./api/db.json')
+
 
 let data = {
     "users": [
@@ -110,10 +110,10 @@ let data = {
     }
   ]
 }
-// const fs = require('fs')
 
-// app.use(express.json({ extended: false}));
-
+app.get('/', (req, res)=>{
+  res.send('Bienvenido a la API ')
+})
 app.get('/api/usuarios', (req, res)=>{
     res.send(data)
 })

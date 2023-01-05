@@ -165,7 +165,7 @@ app.post('/api/productos', (req, res)=>{
     price: info.price,
     category: info.category
   };
-  data.products = [...data.users, newProduct] 
+  data.products = [...data.products, newProduct] 
   console.log(data)
   res.json(newProduct)
 });

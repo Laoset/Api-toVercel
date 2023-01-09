@@ -151,6 +151,11 @@ app.get('/api/productos/:id', (req, res)=>{
     const productos = data.products.find(producto => producto.id === idProduct)
     res.json(productos)
 });
+app.get('/api/productos/:category', (req, res)=>{
+  const categoryProduct = (req.params.category)
+  const productos = data.products.find(producto => producto.category === categoryProduct)
+  res.json(productos)
+});
 //POST DE USUARIOS
 app.post('/api/usuarios', (req, res)=>{
     const info = req.body

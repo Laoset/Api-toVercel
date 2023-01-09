@@ -19,6 +19,7 @@ let data = {
   ],
   "products": [
     {
+      "image": "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/ampere/rtx-3090/geforce-rtx-3090-shop-600-p.png",
       "id": 2,
       "name": "Pelota",
       "price": 149.99,

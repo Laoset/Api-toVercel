@@ -145,7 +145,7 @@ app.post('/api/usuarios', (req, res)=>{
     const newUsuario = {
         id: maxId + 1,
         first_name: info.first_name,
-        last: info.last_name,
+        last_name: info.last_name,
         email: info.email,
         password: info.password
     }

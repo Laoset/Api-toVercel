@@ -34,7 +34,7 @@ let data = {
     },
     {
       "id": 4,
-      'image': "https://articles-images.sftcdn.net/wp-content/uploads/sites/2/2011/03/teclado.jpg",
+      'image': "https://infotec.com.ec/wp-content/uploads/2021/02/XTK-130_2.jpg",
       "name": "Teclado",
       "price": 250,
       "category": "Electronicos"

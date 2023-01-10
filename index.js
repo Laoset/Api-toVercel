@@ -148,13 +148,15 @@ app.get('/api/usuarios/:id', (req, res)=>{
 })
 app.get('/api/productos/:id', (req, res)=>{
     const idProduct = Number(req.params.id)
+    console.log(idProduct)
     const productos = data.products.find(producto => producto.id === idProduct)
     res.json(productos)
 });
-app.get('/api/productos/:category', (req, res)=>{
-  const categoryProduct = (req.params.category)
-  const productos = data.products.find(producto => producto.category === categoryProduct)
-  res.json(productos)
+app.get('/api/productos/category/:category', (req, res)=>{
+  const categoryProduct = req.params.category
+  console.log(categoryProduct)
+   const productos = data.products.filter(producto => producto.category === categoryProduct)
+   res.json(productos)
 });
 //POST DE USUARIOS
 app.post('/api/usuarios', (req, res)=>{

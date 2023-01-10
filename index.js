@@ -107,7 +107,7 @@ let data = {
       "image": "https://www.tripstore.com.ar/media/catalog/product/cache/4769e4d9f3516e60f2b4303f8e5014a8/C/J/CJ0636-500_0.jpg",
       "name": "Zapatilla",
       "price": 250,
-      "category": "Electronicos"
+      "category": "Indumentaria"
     },
     {
       "id": 15,

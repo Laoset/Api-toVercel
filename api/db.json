@@ -1,5 +1,5 @@
 {
-    "users": [
+  "users": [
     {
       "id": 1,
       "first_name": "admin",
@@ -49,7 +49,7 @@
       "id": 8,
       "name": "Botella deportiva",
       "price": 75,
-      "category": "Deportes"
+      "category": "Deporte"
     },
     {
       "id": 9,

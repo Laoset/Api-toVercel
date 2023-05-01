@@ -69,7 +69,7 @@ let data = {
         "https://www.publimania.com.ar/wp-content/uploads/2021/09/01.009.jpg",
       name: "Botella deportiva",
       price: 75,
-      category: "Deportes",
+      category: "Deporte",
     },
     {
       id: 9,
@@ -187,22 +187,6 @@ app.post("/api/usuarios", (req, res) => {
   console.log(data);
   res.json(newUsuario);
 });
-//POST DE PRODUCTOS
-// app.post('/api/productos', (req, res)=>{
-//   const info = req.body
-
-//   const ids = data.products.map(dato => dato.id)
-//   const maxId = Math.max(...ids)
-//   const newProduct = {
-//     id: maxId + 1,
-//     name: info.name,
-//     price: info.price,
-//     category: info.category
-//   };
-//   data.products = [...data.products, newProduct]
-//   console.log(data)
-//   res.json(newProduct)
-// });
 
 const PORT = 8080;
 app.listen(PORT, () =>

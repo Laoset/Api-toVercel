@@ -184,7 +184,6 @@ app.post("/api/usuarios", (req, res) => {
     password: info.password,
   };
   data.users = [...data.users, newUsuario];
-  console.log(data);
   res.json(newUsuario);
 });
 
